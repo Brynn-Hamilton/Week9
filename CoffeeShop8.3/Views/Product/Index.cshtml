@@ -1,0 +1,8 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach(Product products in Model){
+    <div><a href="/product/detail?name=@products.Name">@products.Name</a></div>
+}
